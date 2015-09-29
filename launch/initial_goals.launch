@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+
+	<node pkg="carlos_initial_goals" type="initial_goals" name="initial_goals" output="screen">
+		<param name="global_frame_id" value="map" /> 
+		<param name="arm_distance_to_wall" value="0.70" /> <!-- values between 0.7 and 0.8 -->
+		<param name="marker_ring" value="false" /> 
+		<param name="center_marker_cells" value="true" /> 
+		<param name="base_link" value="base_link" />
+		<param name="arm_link" value="arm_0_link" />
+		<param name="side" value="1" /> <!-- 0 is left to right, 1 is right to left -->
+		<param name="debug" value="true" /> 
+	</node>
+ 
+</launch>
+ 
